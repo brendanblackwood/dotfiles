@@ -1,0 +1,59 @@
+'exception-reporting':
+  'userId': '98ee21f3-137e-28ac-3476-e1c3b8fbf623'
+'release-notes':
+  'viewedVersion': '0.95.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '6f636faefb48e1a355220919422c6940025b31e7'
+'editor':
+  'fontSize': 12
+  'showInvisibles': true
+  'showIndentGuide': true
+'core':
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+    '.tmp'
+    '.log'
+  ]
+  'excludeVcsIgnoredPaths': false
+  'disabledPackages': [
+    'highlight-selected'
+  ]
+  'useReactEditor': true
+  'themes': [
+    'atom-dark-ui'
+    'brendan-monokai'
+  ]
+'tree-view': {}
+'whitespace':
+  'removeTrailingWhitespace': false
+  'ensureSingleTrailingNewline': false
+'autoclose-html':
+  'closeOnEndOfOpeningTag': true
+  'forceInline': 'title, h1, h2, h3, h4, h5, h6, div'
+'markdown-preview':
+  'grammars': [
+    'source.gfm'
+    'source.litcoffee'
+    'text.plain'
+    'text.plain.null-grammar'
+  ]
+'spell-check':
+  'grammars': [
+    'source.gfm'
+    'text.git-commit'
+    'text.plain'
+    'text.plain.null-grammar'
+  ]
+'git-diff':
+  'showIconsInEditorGutter': true
+'fuzzy-finder':
+  'ignoredNames': [
+    'node_modules/'
+    '*.log'
+    'log/'
+    '.tmp/'
+  ]
