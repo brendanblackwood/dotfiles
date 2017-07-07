@@ -10,20 +10,54 @@
 
 @import "ui-variables";
 
-.tree-view {
+// handle silliness with material-ui
+// .list-tree.has-collapsable-children .list-nested-item > .list-tree > li {
+//    padding-left: 0.5rem;
+//  }
+// .compact-tree-view {
+//   .tree-view {
+// 
+//     .name.icon::before {
+//       margin-right: 0.5rem;
+//     }
+// 
+//     li:not(.list-nested-item), li.list-nested-item > .list-item {
+//       line-height: 1.5rem;
+//     }
+//   }
+// }
 
-}
-
-.editor {
-
-}
-
-.editor .cursor {
-
-}
-
-.editor {
+atom-text-editor {
+  .cursor-line .invisible-character {
+    opacity: 1;
+  }
   .invisible-character {
-    color: darken(@base-background-color, 5%);
+    opacity: 0;
+    
+    // why doesnt this work?
+    &::selection {
+      opacity: 1;
+    }
+  }
+}
+
+/* Reduce tree view size a bit */
+.tree-view {
+  li:not(.list-nested-item), li.list-nested-item > .list-item {
+    line-height: 1.5rem;
+  }
+  .list-nested-item .selected::before {
+    height: 2em;
+  }
+  .project-root {
+    &::before {
+      height: 2.5em;
+    }
+    > .header {
+      height: 1.75rem;
+      span, &::before {
+          line-height: 1.75rem;
+      }
+    }
   }
 }

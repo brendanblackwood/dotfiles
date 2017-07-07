@@ -13,3 +13,8 @@
 #     'prefix': 'log'
 #     'body': 'console.log $1'
 #
+
+'.source.ruby':
+  'Insert do |variable| … end':
+    'prefix': 'do'
+    'body': 'do${2: |${1:variable}|}\n\t$0\nend'

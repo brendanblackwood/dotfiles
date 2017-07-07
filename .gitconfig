@@ -4,17 +4,17 @@
 [core]
 	excludesfile = /Users/reverbnation/.gitignore
 	quotepath = false
-	editor = atom --wait
+	editor = subl --wait
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	cmd = "opendiff \"$LOCAL\" \"$REMOTE\""
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = "/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\""
 	trustExitCode = true
 [alias]
-    pd = !~/dev/pretty-diff/pretty-diff.js
-    gd = !~/dev/pretty-diff/gist-diff.js
-    info = !~/dev/helpers/git_info.sh
+  pd = !diff2html
+  gd = !gist-diff
+  info = !~/dev/helpers/git_info.sh
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [branch]
 	autosetuprebase = always

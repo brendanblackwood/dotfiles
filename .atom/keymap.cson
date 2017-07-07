@@ -17,12 +17,15 @@
 #   'ctrl-p': 'core:move-down'
 #
 
-".platform-darwin .editor":
+".platform-darwin atom-text-editor":
   "cmd-shift-T": "symbols-view:toggle-file-symbols"
 
-".platform-darwin .editor":
+".platform-darwin atom-text-editor":
   "cmd-l": "go-to-line:toggle"
-
+  
+'atom-text-editor':
+  'ctrl-left': 'editor:move-to-beginning-of-word'
+  'ctrl-right': 'editor:move-to-end-of-word'
 
 # autocomplete-plus
 ".autocomplete-plus input.hidden-input":

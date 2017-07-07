@@ -1,59 +1,110 @@
-'exception-reporting':
-  'userId': '98ee21f3-137e-28ac-3476-e1c3b8fbf623'
-'release-notes':
-  'viewedVersion': '0.95.0'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': '6f636faefb48e1a355220919422c6940025b31e7'
-'editor':
-  'fontSize': 12
-  'showInvisibles': true
-  'showIndentGuide': true
-'core':
-  'ignoredNames': [
-    '.git'
-    '.svn'
-    '.DS_Store'
-    '.tmp'
-    '.log'
-  ]
-  'excludeVcsIgnoredPaths': false
-  'disabledPackages': [
-    'highlight-selected'
-  ]
-  'useReactEditor': true
-  'themes': [
-    'atom-dark-ui'
-    'brendan-monokai'
-  ]
-'tree-view': {}
-'whitespace':
-  'removeTrailingWhitespace': false
-  'ensureSingleTrailingNewline': false
-'autoclose-html':
-  'closeOnEndOfOpeningTag': true
-  'forceInline': 'title, h1, h2, h3, h4, h5, h6, div'
-'markdown-preview':
-  'grammars': [
-    'source.gfm'
-    'source.litcoffee'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
-'spell-check':
-  'grammars': [
-    'source.gfm'
-    'text.git-commit'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
-'git-diff':
-  'showIconsInEditorGutter': true
-'fuzzy-finder':
-  'ignoredNames': [
-    'node_modules/'
-    '*.log'
-    'log/'
-    '.tmp/'
-  ]
+"*":
+  "atom-material-ui":
+    colors: {}
+    fonts:
+      fontSize: 14
+    tabs: {}
+    treeView:
+      compactList: true
+    ui:
+      animations: false
+      panelContrast: true
+  "atom-pair": {}
+  "autoclose-html":
+    closeOnEndOfOpeningTag: true
+    forceInline: [
+      "title"
+      "h1"
+      "h2"
+      "h3"
+      "h4"
+      "h5"
+      "h6"
+      "div"
+    ]
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+    includeCompletionsFromAllBuffers: true
+    useAlternateScoring: true
+  core:
+    disabledPackages: [
+      "markdown-preview-katex"
+      "indent-guide-improved"
+      "save-session"
+      "pigments"
+    ]
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+      ".tmp"
+      ".log"
+      ".pry_history"
+    ]
+    projectHome: "/Users/bblackwood/dev/reverbnation/reverbnation"
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "material-monokai-syntax"
+    ]
+  editor:
+    confirmCheckoutHeadRevision: false
+    fontFamily: "Inconsolata, Monaco, Consolas, 'Courier New', Courier"
+    fontSize: 12
+    invisibles:
+      eol: false
+    showInvisibles: true
+  "exception-reporting":
+    userId: "98ee21f3-137e-28ac-3476-e1c3b8fbf623"
+  "file-icons":
+    forceShow: true
+  "find-and-replace":
+    focusEditorAfterSearch: true
+    scrollToResultOnLiveSearch: true
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules/"
+      "*.log"
+      "log/"
+      ".tmp/"
+      "tmp/"
+      ".git"
+    ]
+  "git-diff":
+    showIconsInEditorGutter: true
+  "highlight-selected":
+    highlightBackground: true
+    lightTheme: true
+  "linter-ui-default":
+    panelHeight: 81
+  "markdown-preview":
+    grammars: [
+      "source.gfm"
+      "source.litcoffee"
+      "text.plain"
+      "text.plain.null-grammar"
+    ]
+  "markdown-preview-katex": {}
+  metrics:
+    userId: "6f636faefb48e1a355220919422c6940025b31e7"
+  "release-notes":
+    viewedVersion: "0.95.0"
+  "save-session":
+    dataSaveFolder: "/Users/reverbnation/.atom/packages/save-session/projects"
+    fullScreen: false
+    project: "/Users/reverbnation/.atom/packages/brendan-monokai"
+    projects: [
+      "/Users/reverbnation/dev/reverbnation/reverbnation"
+    ]
+    windowHeight: 877
+    windowWidth: 1391
+    windowX: 49
+    windowY: 23
+  tabs:
+    usePreviewTabs: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+    removeTrailingWhitespace: false
