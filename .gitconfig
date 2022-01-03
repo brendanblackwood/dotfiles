@@ -1,23 +1,17 @@
 [user]
 	name = Brendan Blackwood
 	email = elderz@gmail.com
+	# signingkey = B5788312F4B346EC
 [core]
-	excludesfile = /Users/reverbnation/.gitignore
 	quotepath = false
 	editor = subl --wait
-[difftool "sourcetree"]
-	cmd = "opendiff \"$LOCAL\" \"$REMOTE\""
-  path =
-[mergetool "sourcetree"]
-	cmd = "/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\""
-	trustExitCode = true
 [alias]
   pd = !diff2html
   gd = !gist-diff
   info = !~/dev/helpers/git_info.sh
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-[branch]
-	autosetuprebase = always
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[pull]
+	rebase = true
 [push]
 	default = current
 [color]
@@ -29,3 +23,7 @@
 #	untracked
 #	branch
 #	nobranch
+[commit]
+	# gpgsign = true
+[init]
+	defaultBranch = master

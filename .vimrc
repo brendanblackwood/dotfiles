@@ -1,6 +1,5 @@
-execute pathogen#infect()
 syntax on
-filetype plugin indent on
 set number
 set background=dark
 colorscheme solarized
+set ts=4 sw=4
