@@ -10,8 +10,15 @@ if status is-interactive
     # use sublime text as the default editor
     set -Ux EDITOR "subl -w"
 
+    set PATH /Applications/Sublime\ Text.app/Contents/SharedSupport/bin $PATH
     set PATH /Users/brendanblackwood/Library/Python/3.8/bin $PATH
     set PATH /opt/homebrew/bin $PATH
+
+    # setup pyenv
+    status is-login; and pyenv init --path | source
+    status is-interactive; and pyenv init - | source
+    # specifically ignore pyenv python versions from homebrew
+    alias brew="env PATH=(string replace (pyenv root)/shims '' \"\$PATH\") brew"
 end
 
 # setup ssh-agent
